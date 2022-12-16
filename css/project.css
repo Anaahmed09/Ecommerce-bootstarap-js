@@ -47,6 +47,14 @@ body {
   height: calc(100vh - 72.23px - 48px);
   background-color: var(--background-section);
 }
+.slider .imgs img {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 15%;
+  width: 400px;
+  height: 500px;
+}
 .slider button.carousel-control-prev span {
   color: var(--footer-color);
   animation: sliderButtonSpanLeft 5s infinite;
@@ -67,6 +75,12 @@ body {
 /* Start Products */
 .products .card #img {
   position: relative;
+  max-width: 100%;
+  max-height: 100%;
+}
+.products .card #img img {
+  max-width: 100%;
+  max-height: 100%;
 }
 .products .card #img::before {
   content: "";
@@ -158,13 +172,13 @@ footer ul li .top {
 
 /* End Footer  */
 /* sectionInformation */
-.sectionInformation img {
+img {
   max-width: 100%;
 }
 /* End sectionInformation */
 /* in Contact Us  */
 form button[type="submit"] {
-  color: var(--background-footer);
+  color: var(--white-color);
   background-color: var(--footer-color);
 }
 form button[type="submit"]:hover {
