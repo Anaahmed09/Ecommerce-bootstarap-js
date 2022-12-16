@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/project.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&family=Roboto:wght@100;300;500&display=swap"
+      rel="stylesheet"
+    />
+    <title>Home Page</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container ps-lg-5 pe-lg-5">
+        <a class="navbar-brand fs-2">JS</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="./about.html"
+                >About</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="./contactUs.html"
+                >Contact Us</a
+              >
+            </li>
+          </ul>
+          <a class="nav-link ms-5 text-white fs-3" aria-current="page"
+            ><span id="counter">0</span
+            ><i class="fa-brands fa-opencart fa-2x"></i
+          ></a>
+        </div>
+      </div>
+    </nav>
+    <div class="sliderAndSection container">
+      <div class="slider mt-5 position-relative overflow-hidden">
+        <div class="imgs w-100 h-100">
+          <img src="" alt="No Products" />
+        </div>
+        <button class="carousel-control-prev">
+          <span><i class="fa-solid fa-circle-arrow-left fa-2x"></i></span>
+        </button>
+        <button class="carousel-control-next">
+          <span><i class="fa-solid fa-circle-arrow-right fa-2x"></i></span>
+        </button>
+      </div>
+      <div class="information overflow-hidden">
+        <div class="w-100">
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum
+            ipsa quidem consequatur delectus, atque laboriosam ab, placeat
+            suscipit cum labore a. Laudantium ipsa quasi quis aperiam fugit
+            obcaecati laboriosam non.
+          </p>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum
+            ipsa quidem consequatur delectus, atque laboriosam ab, placeat
+            suscipit cum labore a. Laudantium ipsa quasi quis aperiam fugit
+            obcaecati laboriosam non.
+          </p>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum
+            ipsa quidem consequatur delectus, atque laboriosam ab, placeat
+            suscipit cum labore a. Laudantium ipsa quasi quis aperiam fugit
+            obcaecati laboriosam non.
+          </p>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum
+            ipsa quidem consequatur delectus, atque laboriosam ab, placeat
+            suscipit cum labore a. Laudantium ipsa quasi quis aperiam fugit
+            obcaecati laboriosam n----------------
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="products container pt-3">
+      <div class="row">
+        <div class="col-sm-6 col-lg-3 mb-4">
+          <button type="button" class="btn rounded-pill w-100" id="phones">
+            Phones
+          </button>
+        </div>
+        <div class="col-sm-6 col-lg-3 mb-4">
+          <button type="button" class="btn rounded-pill w-100" id="makeup">
+            Makeup
+          </button>
+        </div>
+        <div class="col-sm-6 col-lg-3 mb-4">
+          <button type="button" class="btn rounded-pill w-100" id="clothes">
+            Clothes
+          </button>
+        </div>
+        <div class="col-sm-6 col-lg-3 mb-4">
+          <button type="button" class="btn rounded-pill w-100" id="cars">
+            Cars
+          </button>
+        </div>
+      </div>
+      <div class="row phones" style="display: flex">
+        <div class="col-sm-6 col-lg-3">
+          <div class="card w-100 mt-2 text-center">
+            <div id="img">
+              <img src="./imgs/p1.jpg" class="card-img-top" alt="" />
+            </div>
+            <div class="card-body">
+              <a class="btn rounded"
+                >Add<i class="fa-solid fa-cart-plus ms-2 fs-5"></i
+              ></a>
+            </div>
+          </div>
+          <div class="card w-100 mt-2 text-center">
+            <div id="img">
+              <img src="./imgs/p2.jpg" class="card-img-top" alt="" />
+            </div>
+            <div class="card-body">
+              <a class="btn rounded"
+                >Add<i class="fa-solid fa-cart-plus ms-2 fs-5"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+          <div class="card w-100 mt-2 text-center">
+            <div id="img">
+              <img src="./imgs/p3.jpg" class="card-img-top" alt="" />
+            </div>
+            <div class="card-body">
+              <a class="btn rounded"
+                >Add<i class="fa-solid fa-cart-plus ms-2 fs-5"></i
+              ></a>
+            </div>
+          </div>
+          <div class="card w-100 mt-2 text-center">
+            <div id="img">
+              <img src="./imgs/p4.jpg" class="card-img-top" alt="" />
+            </div>
+            <div class="card-body">
+              <a class="btn rounded"
+                >Add<i class="fa-solid fa-cart-plus ms-2 fs-5"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+          <div class="card w-100 mt-2 text-center">
+            <div id="img">
+              <img src="./imgs/p5.jpg" class="card-img-top" alt="" />
+            </div>
+            <div class="card-body">
+              <a class="btn rounded"
+                >Add<i class="fa-solid fa-cart-plus ms-2 fs-5"></i
+              ></a>
+            </div>
+          </div>
+          <div class="card w-100 mt-2 text-center">
+            <div id="img">
+              <img src="./imgs/p6.jpg" class="card-img-top" alt="" />
+            </div>
+            <div class="card-body">
+              <a class="btn rounded"
+                >Add<i class="fa-solid fa-cart-plus ms-2 fs-5"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+          <div class="card w-100 mt-2 text-center">
+            <div id="img">
+              <img src="./imgs/p7.jpg" class="card-img-top" alt="" />
+            </div>
+            <div class="card-body">
+              <a class="btn rounded"
+                >Add<i class="fa-solid fa-cart-plus ms-2 fs-5"></i
+              ></a>
+            </div>
+          </div>
+          <div class="card w-100 mt-2 text-center">
+            <div id="img">
+              <img src="./imgs/p8.jpg" class="card-img-top" alt="" />
+            </div>
+            <div class="card-body">
+              <a class="btn rounded"
+                >Add<i class="fa-solid fa-cart-plus ms-2 fs-5"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row makeup" style="display: none">
+        <div class="col-sm-6 col-lg-3">
+          <div class="card w-100 mt-2 text-center">
+            <div id="img">
+              <img src="./imgs/m1.jpg" class="card-img-top" alt="" />
+            </div>
+            <div class="card-body">
+              <a class="btn rounded"
+                >Add<i class="fa-solid fa-cart-plus ms-2 fs-5"></i
+              ></a>
+            </div>
+          </div>
+          <div class="card w-100 mt-2 text-center">
+            <div id="img">
+              <img src="./imgs/m2.jpg" class="card-img-top" alt="" />
+            </div>
+            <div class="card-body">
+              <a class="btn rounded"
+                >Add<i class="fa-solid fa-cart-plus ms-2 fs-5"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+          <div class="card w-100 mt-2 text-center">
+            <div id="img">
+              <img src="./imgs/m3.jpg" class="card-img-top" alt="" />
+            </div>
+            <div class="card-body">
+              <a class="btn rounded"
+                >Add<i class="fa-solid fa-cart-plus ms-2 fs-5"></i
+              ></a>
+            </div>
+          </div>
+          <div class="card w-100 mt-2 text-center">
+            <div id="img">
+              <img src="./imgs/m4.jpg" class="card-img-top" alt="" />
+            </div>
+            <div class="card-body">
+              <a class="btn rounded"
+                >Add<i class="fa-solid fa-cart-plus ms-2 fs-5"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+          <div class="card w-100 mt-2 text-center">
+            <div id="img">
+              <img src="./imgs/m5.jpg" class="card-img-top" alt="" />
+            </div>
+            <div class="card-body">
+              <a class="btn rounded"
+                >Add<i class="fa-solid fa-cart-plus ms-2 fs-5"></i
+              ></a>
+            </div>
+          </div>
+          <div class="card w-100 mt-2 text-center">
+            <div id="img">
+              <img src="./imgs/m6.jpg" class="card-img-top" alt="" />
+            </div>
+            <div class="card-body">
+              <a class="btn rounded"
+                >Add<i class="fa-solid fa-cart-plus ms-2 fs-5"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+          <div class="card w-100 mt-2 text-center">
+            <div id="img">
+              <img src="./imgs/m7.jpg" class="card-img-top" alt="" />
+            </div>
+            <div class="card-body">
+              <a class="btn rounded"
+                >Add<i class="fa-solid fa-cart-plus ms-2 fs-5"></i
+              ></a>
+            </div>
+          </div>
+          <div class="card w-100 mt-2 text-center">
+            <div id="img">
+              <img src="./imgs/m8.jpg" class="card-img-top" alt="" />
+            </div>
+            <div class="card-body">
+              <a class="btn rounded"
+                >Add<i class="fa-solid fa-cart-plus ms-2 fs-5"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row clothes" style="display: none">
+        <div class="col-sm-6 col-lg-3">
+          <div class="card w-100 mt-2 text-center">
+            <div id="img">
+              <img src="./imgs/c1.jpg" class="card-img-top" alt="" />
+            </div>
+            <div class="card-body">
+              <a class="btn rounded"
+                >Add<i class="fa-solid fa-cart-plus ms-2 fs-5"></i
+              ></a>
+            </div>
+          </div>
+          <div class="card w-100 mt-2 text-center">
+            <div id="img">
+              <img src="./imgs/c2.jpg" class="card-img-top" alt="" />
+            </div>
+            <div class="card-body">
+              <a class="btn rounded"
+                >Add<i class="fa-solid fa-cart-plus ms-2 fs-5"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+          <div class="card w-100 mt-2 text-center">
+            <div id="img">
+              <img src="./imgs/c3.jpg" class="card-img-top" alt="" />
+            </div>
+            <div class="card-body">
+              <a class="btn rounded"
+                >Add<i class="fa-solid fa-cart-plus ms-2 fs-5"></i
+              ></a>
+            </div>
+          </div>
+          <div class="card w-100 mt-2 text-center">
+            <div id="img">
+              <img src="./imgs/c4.jpg" class="card-img-top" alt="" />
+            </div>
+            <div class="card-body">
+              <a class="btn rounded"
+                >Add<i class="fa-solid fa-cart-plus ms-2 fs-5"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+          <div class="card w-100 mt-2 text-center">
+            <div id="img">
+              <img src="./imgs/c5.jpg" class="card-img-top" alt="" />
+            </div>
+            <div class="card-body">
+              <a class="btn rounded"
+                >Add<i class="fa-solid fa-cart-plus ms-2 fs-5"></i
+              ></a>
+            </div>
+          </div>
+          <div class="card w-100 mt-2 text-center">
+            <div id="img">
+              <img src="./imgs/c6.jpg" class="card-img-top" alt="" />
+            </div>
+            <div class="card-body">
+              <a class="btn rounded"
+                >Add<i class="fa-solid fa-cart-plus ms-2 fs-5"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+          <div class="card w-100 mt-2 text-center">
+            <div id="img">
+              <img src="./imgs/c7.jpg" class="card-img-top" alt="" />
+            </div>
+            <div class="card-body">
+              <a class="btn rounded"
+                >Add<i class="fa-solid fa-cart-plus ms-2 fs-5"></i
+              ></a>
+            </div>
+          </div>
+          <div class="card w-100 mt-2 text-center">
+            <div id="img">
+              <img src="./imgs/c8.jpg" class="card-img-top" alt="" />
+            </div>
+            <div class="card-body">
+              <a class="btn rounded"
+                >Add<i class="fa-solid fa-cart-plus ms-2 fs-5"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row cars" style="display: none">
+        <div class="col-sm-6 col-lg-3">
+          <div class="card w-100 mt-2 text-center">
+            <div id="img">
+              <img src="./imgs/ca1.jpg" class="card-img-top" alt="" />
+            </div>
+            <div class="card-body">
+              <a class="btn rounded"
+                >Add<i class="fa-solid fa-cart-plus ms-2 fs-5"></i
+              ></a>
+            </div>
+          </div>
+          <div class="card w-100 mt-2 text-center">
+            <div id="img">
+              <img src="./imgs/ca2.jpg" class="card-img-top" alt="" />
+            </div>
+            <div class="card-body">
+              <a class="btn rounded"
+                >Add<i class="fa-solid fa-cart-plus ms-2 fs-5"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+          <div class="card w-100 mt-2 text-center">
+            <div id="img">
+              <img src="./imgs/ca3.jpg" class="card-img-top" alt="" />
+            </div>
+            <div class="card-body">
+              <a class="btn rounded"
+                >Add<i class="fa-solid fa-cart-plus ms-2 fs-5"></i
+              ></a>
+            </div>
+          </div>
+          <div class="card w-100 mt-2 text-center">
+            <div id="img">
+              <img src="./imgs/ca4.jpg" class="card-img-top" alt="" />
+            </div>
+            <div class="card-body">
+              <a class="btn rounded"
+                >Add<i class="fa-solid fa-cart-plus ms-2 fs-5"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+          <div class="card w-100 mt-2 text-center">
+            <div id="img">
+              <img src="./imgs/ca5.jpg" class="card-img-top" alt="" />
+            </div>
+            <div class="card-body">
+              <a class="btn rounded"
+                >Add<i class="fa-solid fa-cart-plus ms-2 fs-5"></i
+              ></a>
+            </div>
+          </div>
+          <div class="card w-100 mt-2 text-center">
+            <div id="img">
+              <img src="./imgs/ca6.jpg" class="card-img-top" alt="" />
+            </div>
+            <div class="card-body">
+              <a class="btn rounded"
+                >Add<i class="fa-solid fa-cart-plus ms-2 fs-5"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+          <div class="card w-100 mt-2 text-center">
+            <div id="img">
+              <img src="./imgs/ca7.jpg" class="card-img-top" alt="" />
+            </div>
+            <div class="card-body">
+              <a class="btn rounded"
+                >Add<i class="fa-solid fa-cart-plus ms-2 fs-5"></i
+              ></a>
+            </div>
+          </div>
+          <div class="card w-100 mt-2 text-center">
+            <div id="img">
+              <img src="./imgs/ca8.jpg" class="card-img-top" alt="" />
+            </div>
+            <div class="card-body">
+              <a class="btn rounded"
+                >Add<i class="fa-solid fa-cart-plus ms-2 fs-5"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="lastSection mt-2 pt-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-4">
+            <div class="links">
+              <h5 class="text-light">Links</h5>
+              <ul class="list-unstyled lh-lg">
+                <li>Home</li>
+                <li>Our Services</li>
+                <li>Portfolio</li>
+                <li>Testimonials</li>
+                <li>Support</li>
+                <li>Terms and Condition</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="links">
+              <h5 class="text-light">
+                <a class="text-decoration-none text-white" href="./about.html"
+                  >About Us</a
+                >
+              </h5>
+              <ul class="list-unstyled lh-lg">
+                <li>Sign In</li>
+                <li>Register</li>
+                <li>About Us</li>
+                <li>Blog</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="contact">
+              <h5 class="text-light">
+                <a
+                  class="text-decoration-none text-white"
+                  href="./contactUs.html"
+                  >Contact Us</a
+                >
+              </h5>
+              <ul class="list-unstyled lh-lg">
+                <li>Help</li>
+                <li>Shipping & Delivery</li>
+                <li>Returns & Replacements</li>
+                <li>App Download</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="p-1">
+      <div class="container">
+        <ul
+          class="d-flex justify-content-between align-items-center list-unstyled gap-5"
+        >
+          <li>
+            <a class="d-block text-light"
+              ><i
+                class="fa-brands fa-facebook fa-lg facebook rounded-circle p-2"
+              ></i
+            ></a>
+          </li>
+          <li>
+            <a class="d-block text-light"
+              ><i
+                class="fa-brands fa-twitter fa-lg twitter rounded-circle p-2"
+              ></i
+            ></a>
+          </li>
+          <li>
+            <a class="d-block text-light"
+              ><i
+                class="fa-brands fa-linkedin fa-lg linkedin rounded-circle p-2"
+              ></i
+            ></a>
+          </li>
+          <li>
+            <a class="d-block text-light"
+              ><i
+                class="fa-brands fa-youtube fa-lg youtube rounded-circle p-2"
+              ></i
+            ></a>
+          </li>
+          <li>
+            <a class="d-block text-light top" href="#top"
+              ><i
+                class="fa-solid fa-angles-up fa-lg fs-2 rounded-circle p-2"
+              ></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <script src="./javaScript/all.min.js"></script>
+    <script src="./javaScript/bootstrap.bundle.min.js"></script>
+    <script src="./javaScript/project1.js"></script>
+  </body>
+</html>

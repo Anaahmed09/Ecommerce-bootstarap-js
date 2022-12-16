@@ -1,0 +1,222 @@
+:root {
+  --footer-color: #00b6df;
+  --white-color: white;
+  --background-section: #f2f2f2;
+  --background-footer: #464646;
+  --words: #408cd1;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Cairo", sans-serif;
+  font-family: "Roboto", sans-serif;
+}
+/* Start Navbar  */
+.navbar {
+  background-color: var(--footer-color);
+}
+.navbar-toggler:focus {
+  box-shadow: none;
+  border: 1px solid var(--footer-color);
+}
+.navbar button {
+  color: var(--white-color);
+  border: 1px solid var(--white-color);
+}
+.navbar .navbar-brand {
+  color: var(--white-color);
+  font-weight: bold;
+}
+.navbar .navbar-nav .nav-link {
+  color: var(--white-color);
+}
+.navbar .navbar-nav:hover .nav-link.active {
+  box-shadow: none;
+}
+.navbar .navbar-nav .nav-link.active,
+.navbar .navbar-nav .nav-link.active:hover,
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-link:focus {
+  box-shadow: 0px 0px 80px 10px var(--white-color);
+}
+
+/* End Navbar  */
+/* Start Slider  */
+.slider {
+  height: calc(100vh - 72.23px - 48px);
+  background-color: var(--background-section);
+}
+.slider button.carousel-control-prev span {
+  color: var(--footer-color);
+  animation: sliderButtonSpanLeft 5s infinite;
+}
+.slider button.carousel-control-next span {
+  color: var(--footer-color);
+  animation: sliderButtonSpanRight 5s infinite;
+}
+/* End Slider  */
+/* Start Section */
+.information {
+  margin: 30px 0;
+  padding: 50px;
+  background-color: var(--background-footer);
+  color: var(--white-color);
+}
+/* End Section */
+/* Start Products */
+.products .card #img {
+  position: relative;
+}
+.products .card #img::before {
+  content: "";
+  z-index: 1;
+  position: absolute;
+  width: 0px;
+  height: 100%;
+  background-color: var(--white-color);
+}
+.products .card #img:hover::before {
+  width: 100%;
+  opacity: 0.2;
+  transition: all 1s;
+}
+.products a {
+  color: var(--white-color);
+  background-color: var(--footer-color);
+}
+.products button {
+  color: var(--white-color);
+  background-color: var(--footer-color);
+}
+.products a:hover {
+  color: var(--white-color);
+  background-color: var(--footer-color);
+  opacity: 0.8;
+  transition: all 0.3s;
+}
+.products button:hover {
+  background-color: var(--footer-color);
+  color: var(--white-color);
+  opacity: 0.8;
+  transition: all 0.3s;
+}
+.products .row:nth-child(2) img {
+  max-width: 100%;
+  max-height: 100%;
+}
+/* End Products */
+/* Start lastSection*/
+.lastSection {
+  background-color: var(--background-footer);
+  position: relative;
+}
+.lastSection::after {
+  position: absolute;
+  content: "";
+  background-color: white;
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  height: 2px;
+}
+.lastSection li {
+  color: var(--words);
+}
+/* End lastSection*/
+/* Start Footer  */
+footer {
+  background-color: var(--background-footer);
+}
+footer a {
+  margin-top: 20px;
+  transition-duration: 0.3s;
+}
+footer a:hover {
+  margin-top: 0px;
+}
+footer .facebook {
+  background-color: #1877f2;
+  box-shadow: 0px 0px 50px 15px var(--white-color);
+}
+footer .twitter {
+  background-color: #1da1f2;
+  box-shadow: 0px 0px 50px 15px var(--white-color);
+}
+footer .linkedin {
+  background-color: #0077b5;
+  box-shadow: 0px 0px 50px 15px var(--white-color);
+}
+footer .youtube {
+  background-color: #ff0000;
+  box-shadow: 0px 0px 50px 15px var(--white-color);
+}
+footer ul li .top {
+  animation: top 2s infinite;
+}
+
+/* End Footer  */
+/* sectionInformation */
+.sectionInformation img {
+  max-width: 100%;
+}
+/* End sectionInformation */
+/* in Contact Us  */
+form button[type="submit"] {
+  color: var(--background-footer);
+  background-color: var(--footer-color);
+}
+form button[type="submit"]:hover {
+  color: var(--white-color);
+  background-color: var(--footer-color);
+  opacity: 0.8;
+  transition: all 0.3s;
+}
+/* Contact Us  */
+@keyframes top {
+  0%,
+  10%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40%,
+  60% {
+    transform: translateY(-20px);
+  }
+}
+@keyframes sliderButtonSpanRight {
+  0%,
+  10%,
+  20%,
+  30%,
+  40%,
+  60%,
+  90%,
+  100% {
+    transform: translateX(0);
+  }
+  50%,
+  70% {
+    transform: translateX(20px);
+  }
+}
+@keyframes sliderButtonSpanLeft {
+  0%,
+  20%,
+  30%,
+  50%,
+  60%,
+  70%,
+  80%,
+  100% {
+    transform: translateX(0);
+  }
+  10%,
+  30% {
+    transform: translateX(-20px);
+  }
+}
