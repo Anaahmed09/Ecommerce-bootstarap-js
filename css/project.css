@@ -1,3 +1,8 @@
+/* Start Add Classes BootStrap*/
+.text-justify {
+  text-align: justify;
+}
+/* End Add Classes BootStrap*/
 :root {
   --footer-color: #00b6df;
   --white-color: white;
@@ -44,16 +49,22 @@ body {
 /* End Navbar  */
 /* Start Slider  */
 .slider {
-  height: calc(100vh - 72.23px - 48px);
+  height: 600px;
   background-color: var(--background-section);
 }
 .slider .imgs img {
   position: relative;
   left: 50%;
   transform: translateX(-50%);
-  margin-top: 15%;
   width: 400px;
   height: 500px;
+}
+.slider .btn-danger {
+  z-index: 10;
+  opacity: 0.25;
+}
+.slider .btn-danger:hover {
+  opacity: 1;
 }
 .slider button.carousel-control-prev span {
   color: var(--footer-color);
